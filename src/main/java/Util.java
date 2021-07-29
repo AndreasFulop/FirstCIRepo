@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 public class Util {
 
     private  static WebDriver driver;
-        //single pom pattern ??
+
     public static WebDriver GetDriver() {
         if (driver == null) {
             WebDriverManager.chromedriver().setup();

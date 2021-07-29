@@ -9,18 +9,18 @@ public class WikipediaTestPOM {
         Util.GetDriver().get("https://wikipedia.org/");
         MenuPage.ClickEnglishButton();
         String text = MainPage.GetLabel();
-        Assertions.assertEquals("Welcome to Wikipedia,", text);
+        Assertions.assertEquals("Welcome to Wikipedia,", text, "Error");
     }
-
+/*
     @Test
     public void WikiTest2() {
         Util.GetDriver().get("https://wikipedia.org/");
         MenuPage.ClickEnglishButton();
         MainPage.clickWikipediaLink();
         String text = WikipediaPage.GetSubtitle();
-        Assertions.assertEquals("From Wikipedia, the free encyclopedia", text);
+        Assertions.assertEquals("From Wikipedia, the free encyclopedia", text, "WTF");
     }
-
+*/
     @AfterEach
     public  void closing(){
     Util.CloseDriver();
